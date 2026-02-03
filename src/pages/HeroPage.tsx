@@ -28,11 +28,11 @@ const HeroPage = () => {
           />
         </div>
 
-        {/* NavBar：粘在视口顶部，整页任意位置滚动时始终处于屏幕最上方 */}
-        <NavBar className="relative z-20 shrink-0" />
+        {/* NavBar：fixed 固定在视口顶部，整页滚动时始终可点击 */}
+        <NavBar className="z-20" />
 
-        {/* 主内容：与 NavBar 同属 Hero，居中占满剩余高度 */}
-        <div className="relative z-10 flex flex-1 flex-col items-center justify-center gap-8 px-4 pb-16 pt-4">
+        {/* 主内容：与 NavBar 同属 Hero，预留 NavBar 高度(pt-16)后居中占满剩余高度 */}
+        <div className="relative z-10 flex min-h-screen flex-1 flex-col items-center justify-center gap-8 px-4 pb-16 pt-20">
           <TextType
             className="max-w-4xl text-center text-4xl font-bold tracking-tight text-white md:text-6xl"
             text={["Build your brand with AI", "We are a team of creators"]}

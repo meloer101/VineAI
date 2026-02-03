@@ -33,7 +33,7 @@ export default function NavBar({ className = "" }: NavBarProps) {
 
   return (
     <nav
-      className={`sticky top-0 z-50 w-full bg-black/60 backdrop-blur-xl border-b border-white/10 ${className}`}
+      className={`fixed left-0 right-0 top-0 z-50 w-full bg-black/60 backdrop-blur-xl border-b border-white/10 ${className}`}
       role="navigation"
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
