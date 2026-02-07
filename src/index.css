@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+/* 项目字体与字号：lg=64px, md=40px, sm=24px；正文 Roboto regular，装饰用 Adamina */
+@theme {
+  --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --font-adamina: "Adamina", ui-serif, Georgia, serif;
+
+  /* 设计稿字号：sm 24px, md 40px, lg 64px */
+  --text-hero-sm: 24px;
+  --text-hero-sm--line-height: 1.35;
+  --text-hero-md: 40px;
+  --text-hero-md--line-height: 1.25;
+  --text-hero-lg: 64px;
+  --text-hero-lg--line-height: 1.2;
+}
+
+/* 全局：Roboto + regular */
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+}

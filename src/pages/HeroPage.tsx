@@ -34,7 +34,7 @@ const HeroPage = () => {
         {/* 主内容：与 NavBar 同属 Hero，预留 NavBar 高度(pt-16)后居中占满剩余高度 */}
         <div className="relative z-10 flex min-h-screen flex-1 flex-col items-center justify-center gap-8 px-4 pb-16 pt-20">
           <TextType
-            className="max-w-4xl text-center text-4xl font-bold tracking-tight text-white md:text-6xl"
+            className="max-w-4xl text-center font-normal tracking-tight text-white text-hero-sm md:text-hero-lg"
             text={["Build your brand with AI", "We are a team of creators"]}
             typingSpeed={75}
             pauseDuration={1500}
@@ -42,8 +42,10 @@ const HeroPage = () => {
             cursorCharacter="_"
             deletingSpeed={50}
           />
-          <h1 className="text-center text-3xl font-light text-white md:text-4xl">
-            Make future with us
+          <h1 className="font- text-center text-hero-sm font-normal text-white md:text-hero-sm">
+            Leave repetition to intelligence.
+            <br />
+            Return writing to thinking.
           </h1>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button
@@ -68,10 +70,10 @@ const HeroPage = () => {
         className="relative z-10 bg-black py-16 md:py-24"
       >
         <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-4">
-          <h2 className="text-3xl font-bold text-white md:text-5xl italic">
+          <h2 className="font-adamina text-hero-sm italic text-white md:text-hero-md">
             One Sentence + few Options =?
           </h2>
-          <p className="mt-8 text-xl font-light text-white">
+          <p className="mt-8 text-hero-sm font-normal text-white">
             i want to write an essay about Anthropology
           </p>
           <div className="mt-16 flex justify-center">
@@ -83,19 +85,19 @@ const HeroPage = () => {
           <div className="mt-8 flex flex-wrap items-center justify-center md:gap-8 gap-2">
             <button
               type="button"
-              className="rounded-xl bg-white px-6 py-3 text-base font-medium text-black transition-opacity hover:opacity-90"
+              className="rounded-xl bg-white px-6 py-3 font-normal text-black text-hero-sm transition-opacity hover:opacity-90"
             >
               what topic ?
             </button>
             <button
               type="button"
-              className="rounded-xl bg-white px-6 py-3 text-base font-medium text-black transition-opacity hover:opacity-90"
+              className="rounded-xl bg-white px-6 py-3 font-normal text-black text-hero-sm transition-opacity hover:opacity-90"
             >
               how many words
             </button>
             <button
               type="button"
-              className="rounded-xl bg-white px-6 py-3 text-base font-medium text-black transition-opacity hover:opacity-90"
+              className="rounded-xl bg-white px-6 py-3 font-normal text-black text-hero-sm transition-opacity hover:opacity-90"
             >
               Any details ?
             </button>
@@ -122,7 +124,7 @@ const HeroPage = () => {
                   />
                 </svg>
               </span>
-              <span className="text-xs font-medium text-gray-500">
+              <span className="text-xs font-normal text-gray-500">
                 Check for updates
               </span>
             </div>
@@ -133,15 +135,15 @@ const HeroPage = () => {
                 className="max-h-48 w-auto object-contain md:max-h-64"
               />
             </div>
-            <h3 className="text-left text-lg font-bold text-black md:text-xl">
+            <h3 className="text-left font-normal text-black text-hero-sm md:text-hero-md">
               Effect of optical and electronic structure on the photocatalytic
               activity of Al doped ZnO ALD thin films on glass fibers
             </h3>
-            <p className="mt-3 text-left text-sm text-gray-700">
+            <p className="mt-3 text-left text-sm font-normal text-gray-700">
               Sena Gulecᵃ, Asife B. Aratª, Shafiqul Islamᵇ, Halil I. Akyildiz
               <sup>a, b, *</sup>
             </p>
-            <p className="mt-1 text-left text-xs text-gray-600">
+            <p className="mt-1 text-left text-xs font-normal text-gray-600">
               ᵃ Bursa Uludag University, Department of Textile Engineering,
               Bursa 16059, Türkiye
               <br />ᵇ UNAM-National Nanotechnology Center, Bilkent University,
@@ -150,19 +152,19 @@ const HeroPage = () => {
             <hr className="my-4 border-gray-200" />
             <div className="grid gap-6 md:grid-cols-2">
               <div>
-                <h4 className="text-sm font-semibold uppercase text-gray-500">
+                <h4 className="text-sm font-normal uppercase text-gray-500">
                   Article info
                 </h4>
-                <p className="mt-2 text-sm text-gray-700">
+                <p className="mt-2 text-sm font-normal text-gray-700">
                   <strong>Keywords:</strong> Al-doped ZnO, Atomic layer
                   deposition, Photocatalysis, Textiles.
                 </p>
               </div>
               <div>
-                <h4 className="text-sm font-semibold uppercase text-gray-500">
+                <h4 className="text-sm font-normal uppercase text-gray-500">
                   Abstract
                 </h4>
-                <p className="mt-2 text-sm leading-relaxed text-gray-700">
+                <p className="mt-2 text-sm font-normal leading-relaxed text-gray-700">
                   Photocatalytic water treatment using Al-doped ZnO thin films
                   deposited on glass fabric via ALD was studied.
                   Characterization by FESEM, XRD, XPS, UV-Vis and PL revealed
@@ -172,10 +174,10 @@ const HeroPage = () => {
                 </p>
               </div>
             </div>
-            <h4 className="mt-6 text-sm font-bold text-black">
+            <h4 className="mt-6 text-sm font-normal text-black">
               1. Introduction
             </h4>
-            <div className="mt-2 columns-1 gap-6 text-sm leading-relaxed text-gray-700 md:columns-2">
+            <div className="mt-2 columns-1 gap-6 text-sm font-normal leading-relaxed text-gray-700 md:columns-2">
               <p>
                 Freshwater pollution from industrial textile dyestuffs remains a
                 critical environmental challenge. Semiconductor photocatalysts
@@ -194,7 +196,7 @@ const HeroPage = () => {
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
             <button
               type="button"
-              className="flex items-center gap-2 rounded-xl border border-white bg-transparent px-6 py-3 text-base font-medium text-white transition-colors hover:bg-white/10"
+              className="flex items-center gap-2 rounded-xl border border-white bg-transparent px-6 py-3 font-normal text-hero-sm text-white transition-colors hover:bg-white/10"
             >
               quick start
               <svg
@@ -213,7 +215,7 @@ const HeroPage = () => {
             </button>
             <button
               type="button"
-              className="flex items-center gap-2 rounded-xl border border-white bg-transparent px-6 py-3 text-base font-medium text-white transition-colors hover:bg-white/10"
+              className="flex items-center gap-2 rounded-xl border border-white bg-transparent px-6 py-3 font-normal text-hero-sm text-white transition-colors hover:bg-white/10"
             >
               documentation
               <svg
@@ -237,7 +239,7 @@ const HeroPage = () => {
       {/* ========== Thanks for Using 区 ========== */}
       <section id="thanks" className="relative z-10 bg-black py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-white md:text-4xl">
+          <h2 className="font-adamina text-center text-hero-md font-normal text-white">
             Thanks for Using !
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
@@ -251,7 +253,7 @@ const HeroPage = () => {
                 className="rounded-2xl bg-white p-6 shadow-lg md:p-8"
               >
                 <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-gray-300" />
-                <p className="text-left text-sm leading-relaxed text-black md:text-base">
+                <p className="text-left font-normal leading-relaxed text-black text-hero-sm">
                   {text}
                 </p>
               </div>
@@ -263,25 +265,25 @@ const HeroPage = () => {
       {/* ========== Contact us 区 ========== */}
       <section id="contact" className="relative z-10 bg-black py-16 md:py-24">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold text-white md:text-4xl">
+          <h2 className="font-adamina text-center text-hero-md font-normal text-white">
             contact us
           </h2>
           <div className="mt-12 grid gap-10 md:grid-cols-2 md:items-start">
             <div>
-              <p className="text-xl font-medium text-white md:text-2xl">
+              <p className="font-normal text-white text-hero-sm md:text-hero-md">
                 we really appreciate your voice !
               </p>
-              <p className="mt-2 text-lg text-white/80">
+              <p className="mt-2 font-normal text-hero-sm text-white/80">
                 welcome to say your opinion and your priceless advice
               </p>
             </div>
             <div className="rounded-2xl border border-white/10 bg-zinc-900/90 p-6 backdrop-blur-sm md:p-8">
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium text-white">
+                  <label className="block text-sm font-normal text-white">
                     Billing Address
                   </label>
-                  <p className="mt-1 text-xs text-gray-400">
+                  <p className="mt-1 text-xs font-normal text-gray-400">
                     The billing address associated with your payment method
                   </p>
                   <input
@@ -290,7 +292,7 @@ const HeroPage = () => {
                     placeholder="Enter address"
                   />
                 </div>
-                <label className="flex items-center gap-2 text-sm text-white">
+                <label className="flex items-center gap-2 text-sm font-normal text-white">
                   <input
                     type="checkbox"
                     defaultChecked
@@ -299,7 +301,7 @@ const HeroPage = () => {
                   Same as shipping address
                 </label>
                 <div>
-                  <label className="block text-sm font-medium text-white">
+                  <label className="block text-sm font-normal text-white">
                     Comments
                   </label>
                   <textarea
@@ -311,13 +313,13 @@ const HeroPage = () => {
                 <div className="flex gap-3 pt-2">
                   <button
                     type="button"
-                    className="rounded-lg bg-zinc-700 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-600"
+                    className="rounded-lg bg-zinc-700 px-5 py-2.5 text-sm font-normal text-white transition-colors hover:bg-zinc-600"
                   >
                     Submit
                   </button>
                   <button
                     type="button"
-                    className="rounded-lg border border-white/20 bg-transparent px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
+                    className="rounded-lg border border-white/20 bg-transparent px-5 py-2.5 text-sm font-normal text-white transition-colors hover:bg-white/10"
                   >
                     Cancel
                   </button>
@@ -374,14 +376,16 @@ const HeroPage = () => {
                   </svg>
                 </a>
               </div>
-              <p className="text-sm text-white/80">联系我们: hi@verdent.ai</p>
-              <p className="text-sm text-white/60">
+              <p className="text-sm font-normal text-white/80">
+                联系我们: hi@verdent.ai
+              </p>
+              <p className="text-sm font-normal text-white/60">
                 © 2026 Verdent AI, Inc. All rights reserved.
               </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-3">
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-wide text-white/60">
+                <h4 className="text-sm font-normal uppercase tracking-wide text-white/60">
                   产品
                 </h4>
                 <ul className="mt-3 space-y-2">
@@ -393,7 +397,7 @@ const HeroPage = () => {
                     <li key={item}>
                       <a
                         href="#"
-                        className="text-sm text-white/80 transition-colors hover:text-white"
+                        className="text-sm font-normal text-white/80 transition-colors hover:text-white"
                       >
                         {item}
                       </a>
@@ -402,7 +406,7 @@ const HeroPage = () => {
                 </ul>
               </div>
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-wide text-white/60">
+                <h4 className="text-sm font-normal uppercase tracking-wide text-white/60">
                   资源
                 </h4>
                 <ul className="mt-3 space-y-2">
@@ -410,7 +414,7 @@ const HeroPage = () => {
                     <li key={item}>
                       <a
                         href="#"
-                        className="text-sm text-white/80 transition-colors hover:text-white"
+                        className="text-sm font-normal text-white/80 transition-colors hover:text-white"
                       >
                         {item}
                       </a>
@@ -419,7 +423,7 @@ const HeroPage = () => {
                 </ul>
               </div>
               <div>
-                <h4 className="text-sm font-semibold uppercase tracking-wide text-white/60">
+                <h4 className="text-sm font-normal uppercase tracking-wide text-white/60">
                   公司
                 </h4>
                 <ul className="mt-3 space-y-2">
@@ -427,7 +431,7 @@ const HeroPage = () => {
                     <li key={item}>
                       <a
                         href="#"
-                        className="text-sm text-white/80 transition-colors hover:text-white"
+                        className="text-sm font-normal text-white/80 transition-colors hover:text-white"
                       >
                         {item}
                       </a>

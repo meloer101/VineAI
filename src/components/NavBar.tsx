@@ -75,7 +75,7 @@ export default function NavBar({ className = "" }: NavBarProps) {
             className="flex items-center gap-2 text-white no-underline"
           >
             <AcmeLogo />
-            <span className="font-bold tracking-tight">ACME</span>
+            <span className="font-adamina font-normal tracking-tight">ACME</span>
           </a>
         </div>
 
@@ -85,7 +85,7 @@ export default function NavBar({ className = "" }: NavBarProps) {
             <a
               key={label}
               href={href}
-              className={`text-sm font-medium no-underline transition-colors ${
+              className={`text-sm font-normal no-underline transition-colors ${
                 active
                   ? "text-blue-400"
                   : "text-white/90 hover:text-white"
@@ -101,13 +101,13 @@ export default function NavBar({ className = "" }: NavBarProps) {
         <div className="flex shrink-0 items-center gap-4">
           <a
             href="#"
-            className="hidden text-sm font-medium text-white/90 no-underline hover:text-white md:inline-block"
+            className="hidden text-sm font-normal text-white/90 no-underline hover:text-white md:inline-block"
           >
             Login
           </a>
           <a
             href="#"
-            className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white no-underline hover:bg-blue-500 transition-colors"
+            className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-4 py-2 text-sm font-normal text-white no-underline hover:bg-blue-500 transition-colors"
           >
             Sign Up
           </a>
@@ -126,7 +126,7 @@ export default function NavBar({ className = "" }: NavBarProps) {
               <a
                 key={label}
                 href={href}
-                className="rounded-lg px-4 py-3 text-base font-medium text-white/90 no-underline hover:bg-white/10 hover:text-white"
+                className="rounded-lg px-4 py-3 text-base font-normal text-white/90 no-underline hover:bg-white/10 hover:text-white"
                 onClick={() => setMenuOpen(false)}
               >
                 {label}
@@ -134,7 +134,7 @@ export default function NavBar({ className = "" }: NavBarProps) {
             ))}
             <a
               href="#"
-              className="mt-2 rounded-lg bg-blue-600 px-4 py-3 text-center text-base font-medium text-white no-underline hover:bg-blue-500 transition-colors"
+              className="mt-2 rounded-lg bg-blue-600 px-4 py-3 text-center text-base font-normal text-white no-underline hover:bg-blue-500 transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               Sign Up
